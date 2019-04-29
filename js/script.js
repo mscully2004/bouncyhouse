@@ -73,7 +73,7 @@ function doReset() {
   var yLocsLen = yLocs.length;
   var dXSpeedLen = dXSpeed.length;
   var dYSpeedLen = dYSpeed.length;
-  var dotColorLen = dotColorLen.length;
+  var dotColorLen = dotColor.length;
 
   for (var i = 0; i < xLocsLen; i++){
     xLocs.pop();
@@ -116,9 +116,12 @@ function addClick(x, y) {
   var dColor = Math.floor( Math.random() * colors.length);
   dotColor.push(dColor);
   //speed of dots
-  var randDX = Math.floor( Math.random() * 9) - 4;
-  var randDY = Math.floor( Math.random() * 9) - 4;
-
+  var randDX = 0;
+  var randDY = 0;
+  while(randDX === 0 && randDY === 0) {
+    var randDX = Math.floor( Math.random() * 9) - 4;
+    var randDY = Math.floor( Math.random() * 9) - 4;
+  }
   dXSpeed.push(randDX);
   dYSpeed.push(randDY);
 }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Baloo Chettan', cursive;
+  text-align: center;
+  color: #e81717;
+  font-size: 4em;
+  margin: 0;
+  text-shadow: 3px 3px #000000;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: #42f4a7;
+}
+#menuBar{
+  width:100%;
+  background-color:#a5dd17;
+  text-align: center;
+}
+.button {
+  font-size: 1.75em;
+  margin-right: 100px;
+  margin-left: 100px;
+  text-decoration: none;
+  background-color:#a5dd17;
+  font-weight: bold;
+  border: 0;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+}
+#myCanvas {
+  border: 2px solid CadetBlue;
+}
+#canvasDiv {
+  text-align: center;
+}
